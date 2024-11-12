@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Fråga 8</title>
+
+</head>
+
+<body>
+    <!-- Här ska din HTML kod vara -->
+
+    <script>
+    let numbers = [12, 25, 37, 43, 59, 61];
+
+    function filterEvenNumbers(numbers) {
+        return numbers.filter(function(number) {
+            return number % 2 === 0;  // Filtrera jämna siffror
+        });
+    }
+
+    let evenNumbers = filterEvenNumbers(numbers);
+    console.log(evenNumbers);  // Skriver ut [12]
+    </script>
+</body>
+
+</html>

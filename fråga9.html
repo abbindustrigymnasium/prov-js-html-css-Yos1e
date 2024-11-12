@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visa Bild</title>
+    <script>
+        function showImage() {
+            let imageUrl = document.getElementById("adress").value;
+            document.getElementById("bild").src = imageUrl;
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="adress" placeholder="Skriv in bildens adress">
+    
+    <button onclick="showImage()">Visa Bild</button>
+
+    <img id="bild" alt="Bild kommer att visas här" style="margin-top: 20px;">
+</body>
+</html>
